@@ -12,13 +12,21 @@ get_header(); ?>
 	</span>
 </header>
 
-<section class="front__action">
-	Call-to-action section. Repeatable(?) "Join the convo" with link to FB on left, "Learn with us" with link to courses on right. Elements here will change as the project goes on -- make this its own .php to include where needed and to keep edits separate?
-</section>
-
 <main class="front__main" role="main">
 	Splash copy along the lines of "College admission is broken, join us in figuring out how to reimagine a better process." Maybe just straight-up Gutenberg editable? Or at least capacity to include images on left and/or right.
 </main>
+
+<section class="front__action">
+
+	<div class="action__left">
+		<a class="action__button" href="#">Learn With Us</a>
+	</div>
+
+	<div class="action__right">
+		<a class="action__button" href="#">Join the Conversation</a>
+	</div>
+
+</section>
 
 <section class="front__timeline">
 	Horizontal line representing timeline Marie sent in "one-pager" doc.

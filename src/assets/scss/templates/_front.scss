@@ -11,3 +11,19 @@ body.page-template-front {
 .hero__heading--image {
   width: 70vw;
 }
+
+
+.front__action {
+  @include xy-grid;
+  @include xy-grid-container;
+}
+
+.action__left, .action__right {
+  @include xy-cell(50%);
+  text-align: center;
+}
+
+.action__button {
+  @extend .button;
+  font-size: 1.5rem;
+}
