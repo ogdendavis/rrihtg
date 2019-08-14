@@ -4,26 +4,40 @@ Template Name: Front
 */
 get_header(); ?>
 
-<header class="front__hero" role="banner">
-	<img class="hero__heading--image" src="http://localhost/hackthegates/wp-content/uploads/2019/08/Header-Icon-inverted.png">
-	<h1 class="show-for-sr" role="heading" aria-level="1">Hack the Gates</h1>
-	<span class="show-for-sr" role="heading" aria-level="2">
-		Radically Reimagining College Admission
-	</span>
-</header>
+<div class="hero__container">
 
-<main class="front__main" role="main">
-	Splash copy along the lines of "College admission is broken, join us in figuring out how to reimagine a better process." Maybe just straight-up Gutenberg editable? Or at least capacity to include images on left and/or right.
-</main>
+	<header class="front__hero" role="banner">
+		<img class="hero__heading--image" src="http://localhost/hackthegates/wp-content/uploads/2019/08/Header-Icon-inverted.png">
+		<h1 class="show-for-sr" role="heading" aria-level="1">Hack the Gates</h1>
+		<span class="show-for-sr" role="heading" aria-level="2">
+			Radically Reimagining College Admission
+		</span>
+	</header>
+
+	<main class="front__main" role="main">
+		<div class="main__content">
+			<p class="main__hook">We will create an equitable path to post-secondary education.</p>
+			<p>Over the next year, Hack the Gates will facilitate urgently needed honest conversations among college admissions stakeholders about the roles we play as gatekeepers to opportunity, perpetrators of racial inequity, and leaders in designing equitable college enrollment processes.</p>
+			<p>Through online learning, creative brainstorming, and policy analysis, Hack the Gates: Radically Reimagine Admissions will be the catalyst for a complete transformation of the college admissions process.</p>
+		</div>
+	</main>
+
+</div>
 
 <section class="front__action">
 
-	<div class="action__left">
-		<a class="action__button" href="#">Learn With Us</a>
-	</div>
+	<div class="action__container">
 
-	<div class="action__right">
-		<a class="action__button" href="#">Join the Conversation</a>
+		<div class="action__left">
+			<p>Enroll in an online course to learn about how the current college admissions system evolved, and what it actually looks like today.</p>
+			<a class="action__button" href="#">Learn With Us</a>
+		</div>
+
+		<div class="action__right">
+			<p>Engage with stakeholders all across the college admissions world to build a shared vision of a just and equitable path to higher education.</p>
+			<a class="action__button" href="#">Join the Conversation</a>
+		</div>
+
 	</div>
 
 </section>

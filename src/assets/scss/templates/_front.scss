@@ -1,10 +1,14 @@
 body.page-template-front {
   background: $black;
   color: white;
+  font-size: 1.25rem;
+}
+
+.hero__container {
+  background: linear-gradient(to right, rgba($black,1) 45vw, rgba($black,0.2)), url('http://localhost/hackthegates/wp-content/uploads/2019/08/sallyport.jpeg') right/contain no-repeat;
 }
 
 .front__hero {
-  background: linear-gradient(to right, rgba($black,1) 50vw, rgba($black,0.2)), url('http://localhost/hackthegates/wp-content/uploads/2019/08/sallyport.jpeg') right/50vw no-repeat;
   padding: 5rem;
 }
 
@@ -12,18 +16,54 @@ body.page-template-front {
   width: 70vw;
 }
 
-
-.front__action {
+.front__main {
   @include xy-grid;
   @include xy-grid-container;
+  font-size: 1.5rem;
+  position: relative;
+  top: -3.25rem;
+  margin-bottom: -1.25rem;
+}
+
+.main__content {
+  @include xy-cell(90%);
+}
+
+.main__hook {
+  font-size: 2rem;
+  color: $gold;
+}
+
+.front__action {
+  background: $gold;
+  padding: 2rem 0;
+  color: $black;
+}
+
+.action__container {
+  @include xy-grid-container;
+  @include xy-grid;
 }
 
 .action__left, .action__right {
-  @include xy-cell(50%);
+  @include xy-cell(1 of 2);
   text-align: center;
+}
+
+.action__left {
+  padding-right: 3rem;
+}
+
+.action__right {
+  padding-left: 3rem;
 }
 
 .action__button {
   @extend .button;
   font-size: 1.5rem;
+  margin-top: 1rem;
+
+  &:hover {
+    background: $white;
+  }
 }
