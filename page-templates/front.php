@@ -4,95 +4,97 @@ Template Name: Front
 */
 get_header(); ?>
 
-<header class="front-hero" role="banner">
-	<div class="marketing">
-		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-		</div>
-
-		<div class="watch">
-			<span id="stargazers"><a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a></span>
-			<span id="twitter"><a href="https://twitter.com/olefredrik">@olefredrik</a></span>
-		</div>
-	</div>
-
+<header class="front__hero" role="banner">
+	This is the hero section! Big BG image, heading text on left, image focus on right
 </header>
 
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<section class="intro" role="main">
-	<div class="fp-intro">
+<section class="front__action">
+	Call-to-action section. Repeatable(?) "Join the convo" with link to FB on left, "Learn with us" with link to courses on right. Elements here will change as the project goes on -- make this its own .php to include where needed and to keep edits separate?
+</section>
 
-		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
+<main class="front__main" role="main">
+	Splash copy along the lines of "College admission is broken, join us in figuring out how to reimagine a better process." Maybe just straight-up Gutenberg editable? Or at least capacity to include images on left and/or right.
+</main>
+
+<section class="front__timeline">
+	Horizontal line representing timeline Marie sent in "one-pager" doc.
+</section>
+
+<section class="front__methods">
+
+*** METHOD AREAS ***
+Three areas, one for each method the project will use to radically reimagine admissions: online learning, creative brainstorming, and policy analysis. Each should have one BG image/color, and a strip running down the right side of the page with the name of the section (repeating?) running down the side. Within each area, should be able to have multiple divs for content blocks, alternating pic on left and pic on right for each div. Will have to hard-code the number of divs, to start, since can't have repeater fields.
+
+	<div class="front__method--learning">
+
+		<div class="method--img-left">
+
+			<div class="method__image">
+				<img src="#" alt="image!">
 			</div>
-			<footer>
-				<?php
-					wp_link_pages(
-						array(
-							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
-							'after'  => '</p></nav>',
-						)
-					);
-				?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action( 'foundationpress_page_before_comments' ); ?>
-			<?php comments_template(); ?>
-			<?php do_action( 'foundationpress_page_after_comments' ); ?>
+
+			<div class="method__text">
+				This is the copy for the Online Learning method area!
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="front__method--brainstorming">
+
+		<div class="method--img-right">
+
+			<div class="method__image">
+				<img src="#" alt="image!">
+			</div>
+
+			<div class="method__text">
+				This is the copy for the first Creative Brainstorming method area!
+			</div>
+
+		</div>
+
+		<div class="method--img-left">
+
+			<div class="method__image">
+				<img src="#" alt="image!">
+			</div>
+
+			<div class="method__text">
+				This is the copy for the second Creative Brainstorming method area!
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="front__method--policy">
+
+		<div class="method--img-right">
+
+			<div class="method__image">
+				<img src="#" alt="image!">
+			</div>
+
+			<div class="method__text">
+				This is the copy for the Policy Analysis method area!
+			</div>
+
 		</div>
 
 	</div>
 
 </section>
-<?php endwhile; ?>
-<?php do_action( 'foundationpress_after_content' ); ?>
 
-<div class="section-divider">
-	<hr />
-</div>
+<section class="front__about">
+	Area for info about sponsoring organizations. Currently thinking ACCEPT on left, RISE on right. If we need to include sponsor foundations, could go to a grid.
+</section>
 
-
-<section class="benefits">
-	<header>
-		<h2>Build Foundation based sites, powered by WordPress</h2>
-		<h4>Foundation is the professional choice for designers, developers and teams. <br /> WordPress is by far, <a href="http://trends.builtwith.com/cms">the world's most popular CMS</a> (currently powering 38% of the web).</h4>
-	</header>
-
-	<div class="semantic">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/semantic.svg" alt="semantic">
-		<h3>Semantic</h3>
-		<p>Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
-	</div>
-
-	<div class="responsive">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/responsive.svg" alt="responsive">
-		<h3>Responsive</h3>
-		<p>You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.</p>
-
-	</div>
-
-	<div class="customizable">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/customizable.svg" alt="customizable">
-		<h3>Customizable</h3>
-		<p>You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more.</p>
-
-	</div>
-
-	<div class="professional">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/professional.svg" alt="professional">
-		<h3>Professional</h3>
-		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
-	</div>
-
-	<div class="why-foundation">
-		<a href="/kitchen-sink">See what's in Foundation out of the box →</a>
-	</div>
-
+<section class="front__partners">
+	Area for partner logos. Thinking this is where sponsors should go.
 </section>
 
 <?php get_footer();
