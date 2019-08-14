@@ -5,7 +5,11 @@ Template Name: Front
 get_header(); ?>
 
 <header class="front__hero" role="banner">
-	This is the hero section! Big BG image, heading text on left, image focus on right
+	<img class="hero__heading--image" src="http://localhost/hackthegates/wp-content/uploads/2019/08/Header-Icon-inverted.png">
+	<h1 class="show-for-sr" role="heading" aria-level="1">Hack the Gates</h1>
+	<span class="show-for-sr" role="heading" aria-level="2">
+		Radically Reimagining College Admission
+	</span>
 </header>
 
 <section class="front__action">

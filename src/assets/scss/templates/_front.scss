@@ -1,0 +1,13 @@
+body.page-template-front {
+  background: $black;
+  color: white;
+}
+
+.front__hero {
+  background: linear-gradient(to right, rgba($black,1) 50vw, rgba($black,0.2)), url('http://localhost/hackthegates/wp-content/uploads/2019/08/sallyport.jpeg') right/50vw no-repeat;
+  padding: 5rem;
+}
+
+.hero__heading--image {
+  width: 70vw;
+}
