@@ -43,8 +43,78 @@ get_header(); ?>
 </section>
 
 <section class="front__timeline">
-	Horizontal line representing timeline Marie sent in "one-pager" doc.
-</section>
+
+	<div class="timeline">
+
+		<h2>Our Timeline</h2>
+
+		<div class="timeline__line">
+			<div class="timeline__month">September</div>
+			<div class="timeline__month">October</div>
+			<div class="timeline__month">November</div>
+			<div class="timeline__month">December</div>
+			<div class="timeline__month">January</div>
+			<div class="timeline__month">February</div>
+			<div class="timeline__month">March</div>
+			<div class="timeline__month">April</div>
+			<div class="timeline__month">May</div>
+			<div class="timeline__month">June</div>
+			<div class="timeline__month">July</div>
+			<div class="timeline__month">August</div>
+		</div>
+
+		<ol class="timeline__items">
+
+			<li class="timeline__item" id="engagement" data-start="0" data-end="11">
+				<div class="item__dates">
+					September 2019 - August 2020
+				</div>
+				<div class="item__info">
+					Online engagement and community building
+				</div>
+			</li>
+
+			<li class="timeline__item" id="community" data-start="0" data-end="7">
+				<div class="item__dates">
+					September 2019 - April 2020
+				</div>
+				<div class="item__info">
+					Webinars, social media events, and meetups
+				</div>
+			</li>
+
+			<li class="timeline__item" id="hackathon" data-start="2" data-end="2">
+				<div class="item__dates">
+					November 8-9, 2019
+				</div>
+				<div class="item__info">
+					Hack-a-Thon the Gates conference
+				</div>
+			</li>
+
+			<li class="timeline__item" id="findings" data-start="7" data-end="7">
+				<div class="item__dates">
+					April 2020
+				</div>
+				<div class="item__info">
+					Preliminary findings released
+				</div>
+			</li>
+
+			<li class="timeline__item" id="papers" data-start="11" data-end="11">
+				<div class="item__dates">
+					August 2020
+				</div>
+				<div class="item__info">
+					Final policy papers released
+				</div>
+			</li>
+
+		</ol>
+
+	</div> <?php //.timeline ?>
+
+</section> <?php //.front__timeline ?>
 
 <section class="front__methods">
 

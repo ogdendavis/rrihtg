@@ -2,6 +2,10 @@ body.page-template-front {
   background: $black;
   color: white;
   font-size: 1.25rem;
+
+  section {
+    padding: 2rem 0;
+  }
 }
 
 .hero__container {
@@ -36,7 +40,6 @@ body.page-template-front {
 
 .front__action {
   background: $gold;
-  padding: 2rem 0;
   color: $black;
 }
 
@@ -66,4 +69,50 @@ body.page-template-front {
   &:hover {
     background: $white;
   }
+}
+
+.timeline {
+  @include xy-grid-container;
+  // background: gray; //temp for visibility
+}
+
+.timeline__line {
+  height: 4px;
+  width: 100%;
+  background: $white;
+  margin-bottom: 2.5rem;
+  overflow: visible;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.timeline__month {
+  flex: 1 1 0;
+  color: gray;
+  font-size: rem-calc(14);
+  text-align: center;
+  position: relative;
+  top: rem-calc(8);
+}
+
+.timeline__items {
+  list-style: none;
+  margin: 0;
+  position: relative;
+}
+
+.timeline__item {
+  position: relative;
+  padding: 0.5rem;
+  font-family: $header-font-family;
+  vertical-align: top;
+}
+
+.item__dates {
+  text-decoration: underline dotted;
+  text-decoration-color: darken($white, 15%);
+}
+
+.item__info {
+  margin-left: 1.5rem;
 }
