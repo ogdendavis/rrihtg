@@ -221,11 +221,11 @@ get_header(); ?>
 		<div class="about__org--ACCEPT">
 
 			<div class="about__logo">
-
+				<img src="http://localhost/hackthegates/wp-content/uploads/2019/08/White-Full-Text-No-Background-Large.png" alt="ACCEPT">
 			</div>
 
 			<div class="about__content">
-
+				<p>ACCEPT empowers college admissions professionals who seek to center anti-racism, equity and justice in our work and communities. As educational gatekeepers, college admissions professionals hold the most responsibility in removing barriers to post-secondary education; everyone in this work has a role to play. ACCEPT, a grassroots community of 5500+ college admissions professionals, actively removes those barriers. Through collaboration, advocacy, and action, ACCEPT leads the way increating an equitable, just, and anti-racist path to post-secondary education.</p>
 			</div>
 
 		</div>
@@ -233,11 +233,11 @@ get_header(); ?>
 		<div class="about__org--RISE">
 
 			<div class="about__logo">
-
+				<img src="http://localhost/hackthegates/wp-content/uploads/2019/08/RISEE_Logo_fullname_Rev_C.png" alt="RISE">
 			</div>
 
 			<div class="about__content">
-
+				<p>The RISE Center brings together researchers, practitioners, community members, and other educational stakeholders interested in advancing community-engaged research to transform practices, pedagogies, policies, and leadership for racial justice and equity in PK-12 and postsecondary educational institutions. Through strategic partnerships with practitioners and policymakers, RISE amplifies and applies publicly-engaged research in issues of national conversation. We engage directly with dynamically evolving issues in order to shape dialogues and help bring us toward more equitable resolutions.</p>
 			</div>
 
 		</div>

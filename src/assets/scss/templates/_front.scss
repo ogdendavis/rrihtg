@@ -235,3 +235,37 @@ $method-gradient: linear-gradient(
   justify-content: center;
   padding: 1rem;
 }
+
+.front__about {
+  padding: 2rem 0;
+}
+
+.about__container {
+  @include xy-grid-container;
+  @include xy-grid;
+}
+
+%about__org {
+  @include xy-cell(1 of 2);
+}
+
+.about__org--ACCEPT {
+  @extend %about__org;
+}
+
+.about__org--RISE {
+  @extend %about__org;
+}
+
+.about__logo {
+  text-align: center;
+
+  img {
+    max-height: rem-calc(250);
+  }
+}
+
+.about__content {
+  margin-top: 1rem;
+  padding: 1rem;
+}
