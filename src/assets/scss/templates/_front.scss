@@ -1,3 +1,8 @@
+// Smooth scroll for anchor links
+html {
+  scroll-behavior: smooth;
+}
+
 body.page-template-front {
   background: $black;
   color: white;
@@ -295,4 +300,10 @@ $method-gradient: linear-gradient(
   img {
     max-height: 200px;
   }
+}
+
+// Trying to move nav jumps up a bit
+.anchor {
+  position: relative;
+  top: -2rem;
 }

@@ -24,6 +24,7 @@ get_header(); ?>
 
 </div>
 
+<a class="anchor" id="action"></a>
 <section class="front__action">
 
 	<div class="action__container">
@@ -42,6 +43,7 @@ get_header(); ?>
 
 </section>
 
+<a class="anchor" id="timeline"></a>
 <section class="front__timeline">
 
 	<div class="timeline">
@@ -116,6 +118,7 @@ get_header(); ?>
 
 </section> <?php //.front__timeline ?>
 
+<a class="anchor" id="methods"></a>
 <section class="front__methods">
 
 	<div class="front__method--learning">
@@ -214,6 +217,7 @@ get_header(); ?>
 
 </section>
 
+<a class="anchor" id="about"></a>
 <section class="front__about">
 
 	<div class="about__container">
@@ -246,6 +250,7 @@ get_header(); ?>
 
 </section>
 
+<a class="anchor" id="partners"></a>
 <section class="front__partners">
 
 	<div class="partners__container">
