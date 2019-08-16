@@ -73,13 +73,13 @@ body.page-template-front {
 
 .timeline {
   @include xy-grid-container;
-  // background: gray; //temp for visibility
 }
 
 .timeline__line {
   height: 4px;
   width: 100%;
   background: $white;
+  margin-top: 1rem;
   margin-bottom: 2.5rem;
   overflow: visible;
   display: flex;
@@ -268,4 +268,31 @@ $method-gradient: linear-gradient(
 .about__content {
   margin-top: 1rem;
   padding: 1rem;
+}
+
+.front__partners {
+  background: lighten($black, 25%);
+}
+
+.partners__container {
+  @include xy-grid-container;
+  @include xy-grid;
+}
+
+.partners__heading {
+  @include xy-cell(full);
+  margin-bottom: 1rem;
+}
+
+.partner {
+  @include xy-cell(1 of 4);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-height: 200px;
+  }
 }

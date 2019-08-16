@@ -247,7 +247,47 @@ get_header(); ?>
 </section>
 
 <section class="front__partners">
-	Area for partner logos. Thinking this is where sponsors should go.
+
+	<div class="partners__container">
+
+		<div class="partners__heading">
+			<h2>Partners</h2>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/Screen-Shot-2019-08-10-at-7.00.22-PM.png" alt="The Joyce Foundation"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-1.png" alt="Random"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-2.png" alt="Random"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-3.png" alt="Random"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-4.jpeg" alt="Random"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-5.jpg" alt="Random"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-6.jpg" alt="Random"></a>
+		</div>
+
+		<div class="partner">
+			<a class="partner__link" href="#" target="_blank"><img src="http://localhost/hackthegates/wp-content/uploads/2019/08/random-logo-7.png" alt="Random"></a>
+		</div>
+
+	</div>
+
 </section>
 
 <?php get_footer();
