@@ -26,3 +26,27 @@
 .nav-next {
   float:right;
 }
+
+// Styling for header
+.header__logo {
+  max-width: 4rem;
+  margin-left: 2rem;
+}
+
+.site-navigation.top-bar {
+  background: $black;
+
+  ul {
+    background: $black;
+  }
+
+  a {
+    color: $white;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}

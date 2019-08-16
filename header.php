@@ -35,7 +35,9 @@
 		<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img class="header__logo" src="http://localhost/hackthegates/wp-content/uploads/2019/08/White-No-Background-Small.png" alt="Hack the Gates">
+					</a>
 				</div>
 			</div>
 			<div class="top-bar-right">
