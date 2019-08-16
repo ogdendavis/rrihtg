@@ -5,9 +5,22 @@
   transition: all .5s ease-in-out;
   font-size: 1.25rem;
   font-weight: 500;
+  margin: auto;
 
   &:hover {
     background: $gold;
     color: $blue;
+  }
+}
+
+.button--gold {
+  @extend .button;
+
+  background: $gold;
+  color: $blue;
+
+  &:hover {
+    background: $blue;
+    color: $white;
   }
 }

@@ -133,7 +133,10 @@ get_header(); ?>
 				</div>
 
 				<div class="method__text">
-					<p>This is the copy for the Online Learning method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div>
+						<p>This is the copy for the Online Learning method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="method__button">Do a thing!</a>
+					</div>
 				</div>
 
 			</div>
@@ -157,7 +160,9 @@ get_header(); ?>
 				</div>
 
 				<div class="method__text">
-					This is the copy for the first Creative Brainstorming method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					<div>
+						<p>This is the copy for the first Creative Brainstorming method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 
 			</div>
@@ -169,7 +174,10 @@ get_header(); ?>
 				</div>
 
 				<div class="method__text">
-					This is the copy for the second Creative Brainstorming method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					<div>
+						<p>This is the copy for the second Creative Brainstorming method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="method__button">I like buttons</a>
+					</div>
 				</div>
 
 			</div>
@@ -193,7 +201,10 @@ get_header(); ?>
 				</div>
 
 				<div class="method__text">
-					This is the copy for the Policy Analysis method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					<div>
+						<p>This is the copy for the Policy Analysis method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a class="method__button" href="#">Go to it</a>
+					</div>
 				</div>
 
 			</div>
@@ -204,7 +215,35 @@ get_header(); ?>
 </section>
 
 <section class="front__about">
-	Area for info about sponsoring organizations. Currently thinking ACCEPT on left, RISE on right. If we need to include sponsor foundations, could go to a grid.
+
+	<div class="about__container">
+
+		<div class="about__org--ACCEPT">
+
+			<div class="about__logo">
+
+			</div>
+
+			<div class="about__content">
+
+			</div>
+
+		</div>
+
+		<div class="about__org--RISE">
+
+			<div class="about__logo">
+
+			</div>
+
+			<div class="about__content">
+
+			</div>
+
+		</div>
+
+	</div>
+
 </section>
 
 <section class="front__partners">

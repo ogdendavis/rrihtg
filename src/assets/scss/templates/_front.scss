@@ -136,6 +136,10 @@ $method-gradient: linear-gradient(
   .method--img-left, .method--img-right {
     background: linear-gradient(rgba($blue,0.6),rgba($blue,0.6));
   }
+
+  .method__button {
+    @extend .button--gold;
+  }
 }
 
 .front__method--brainstorming {
@@ -145,6 +149,10 @@ $method-gradient: linear-gradient(
   .method--img-left, .method--img-right {
     background: linear-gradient(rgba($purple,0.6),rgba($purple,0.6));
   }
+
+  .method__button {
+    @extend .button;
+  }
 }
 
 .front__method--policy {
@@ -153,6 +161,10 @@ $method-gradient: linear-gradient(
 
   .method--img-left, .method--img-right {
     background: linear-gradient(rgba($green,0.6),rgba($green,0.6));
+  }
+
+  .method__button {
+    @extend .button;
   }
 }
 
