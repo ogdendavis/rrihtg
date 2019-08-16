@@ -116,3 +116,110 @@ body.page-template-front {
 .item__info {
   margin-left: 1.5rem;
 }
+
+// Method areas -- extensible classes for common styling
+%front__method {
+  padding: 2rem;
+  position: relative;
+}
+
+$method-gradient: linear-gradient(
+                    to top right,
+                    rgba($black,0.7) 40%,
+                    rgba($blue--astro,0.6)80%,
+                    rgba($gold,0.5));
+
+.front__method--learning {
+  @extend %front__method;
+  background: $method-gradient, url('http://localhost/hackthegates/wp-content/uploads/2019/08/lecture-students.jpg') center/cover no-repeat;
+
+  .method--img-left, .method--img-right {
+    background: linear-gradient(rgba($blue,0.6),rgba($blue,0.6));
+  }
+}
+
+.front__method--brainstorming {
+  @extend %front__method;
+  background: $method-gradient, url('http://localhost/hackthegates/wp-content/uploads/2019/08/in-person-brainstorm.jpg') top/cover no-repeat;
+
+  .method--img-left, .method--img-right {
+    background: linear-gradient(rgba($purple,0.6),rgba($purple,0.6));
+  }
+}
+
+.front__method--policy {
+  @extend %front__method;
+  background: $method-gradient, url('http://localhost/hackthegates/wp-content/uploads/2019/08/laptop-charts-and-graphs.jpg') center/cover no-repeat;
+
+  .method--img-left, .method--img-right {
+    background: linear-gradient(rgba($green,0.6),rgba($green,0.6));
+  }
+}
+
+%method__sidebar {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  font-size: 2rem;
+  font-family: $header-font-family;
+  padding: 0.5rem;
+}
+
+.method__sidebar--learning {
+  @extend %method__sidebar;
+  background: $blue;
+}
+
+.method__sidebar--brainstorming {
+  @extend %method__sidebar;
+  background: $purple;
+}
+
+.method__sidebar--policy {
+  @extend %method__sidebar;
+  background: $green;
+}
+
+.method__container {
+  @include xy-grid-container;
+  @include xy-grid;
+}
+
+.method {
+  @include xy-grid;
+  margin: 1rem 0;
+}
+
+.method--img-right {
+  @extend .method;
+
+  .method__image {
+    order: 1;
+    margin-right: 0;
+    margin-left: 20px; // brute force fix to push image all the way right -- should find a better way!
+  }
+}
+
+.method--img-left {
+  @extend .method;
+
+  .method__image {
+    margin-left: 0;
+  }
+}
+
+.method__image {
+  @include xy-cell(30%);
+}
+
+.method__text {
+  @include xy-cell(70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}

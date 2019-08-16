@@ -118,69 +118,87 @@ get_header(); ?>
 
 <section class="front__methods">
 
-*** METHOD AREAS ***
-Three areas, one for each method the project will use to radically reimagine admissions: online learning, creative brainstorming, and policy analysis. Each should have one BG image/color, and a strip running down the right side of the page with the name of the section (repeating?) running down the side. Within each area, should be able to have multiple divs for content blocks, alternating pic on left and pic on right for each div. Will have to hard-code the number of divs, to start, since can't have repeater fields.
-
 	<div class="front__method--learning">
 
-		<div class="method--img-left">
+		<div class="method__sidebar--learning">
+			Online Learning
+		</div>
 
-			<div class="method__image">
-				<img src="#" alt="image!">
-			</div>
+		<div class="method__container">
 
-			<div class="method__text">
-				This is the copy for the Online Learning method area!
+			<div class="method--img-left">
+
+				<div class="method__image">
+					<img src="http://localhost/hackthegates/wp-content/uploads/2019/08/online-learning.jpg" alt="image!">
+				</div>
+
+				<div class="method__text">
+					<p>This is the copy for the Online Learning method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
 			</div>
 
 		</div>
-
 	</div>
 
 
 	<div class="front__method--brainstorming">
 
-		<div class="method--img-right">
+		<div class="method__sidebar--brainstorming">
+			Creative Brainstorming
+		</div>
 
-			<div class="method__image">
-				<img src="#" alt="image!">
+		<div class="method__container">
+
+			<div class="method--img-right">
+
+				<div class="method__image">
+					<img src="http://localhost/hackthegates/wp-content/uploads/2019/08/thoughtbulb.jpg" alt="image!">
+				</div>
+
+				<div class="method__text">
+					This is the copy for the first Creative Brainstorming method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+
 			</div>
 
-			<div class="method__text">
-				This is the copy for the first Creative Brainstorming method area!
+			<div class="method--img-left">
+
+				<div class="method__image">
+					<img src="http://localhost/hackthegates/wp-content/uploads/2019/08/handshake.jpg" alt="image!">
+				</div>
+
+				<div class="method__text">
+					This is the copy for the second Creative Brainstorming method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+
 			</div>
 
 		</div>
-
-		<div class="method--img-left">
-
-			<div class="method__image">
-				<img src="#" alt="image!">
-			</div>
-
-			<div class="method__text">
-				This is the copy for the second Creative Brainstorming method area!
-			</div>
-
-		</div>
-
 	</div>
 
 
 	<div class="front__method--policy">
 
-		<div class="method--img-right">
+		<div class="method__sidebar--policy">
+			Policy Analysis
+		</div>
 
-			<div class="method__image">
-				<img src="#" alt="image!">
-			</div>
+		<div class="method__container">
 
-			<div class="method__text">
-				This is the copy for the Policy Analysis method area!
+			<div class="method--img-right">
+
+				<div class="method__image">
+					<img src="http://localhost/hackthegates/wp-content/uploads/2019/08/report.jpg" alt="image!">
+				</div>
+
+				<div class="method__text">
+					This is the copy for the Policy Analysis method area! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+
 			</div>
 
 		</div>
-
 	</div>
 
 </section>
